@@ -1,0 +1,679 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+
+    <head>
+
+        <meta charset="UTF-8">
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>Meu site | @devleonardo.ofc</title>
+
+    </head>
+
+    <style>
+
+        html{
+            scroll-behavior: smooth;
+        }
+
+        body{
+            margin: 0;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+
+        #topMenu{
+            display: flex;
+            background-color: #FF914D;
+            margin: 0;
+        }
+
+        #topMenu li{
+            color: white;
+            text-decoration: none;
+            display: block;
+            padding: 15px;
+        }
+
+        #topMenu li a{
+            text-decoration: none;
+            color: white;
+            margin-right: 30px;
+            font-size: 18px;
+            transition: .5s;
+        }
+
+        #topMenu li a:hover{
+            color: black;
+        }
+
+        #topMenu li:first-child{
+            margin-right: auto;
+        }
+
+        .section1{
+            display: flex;
+            height: 91vh;
+            background-color: white;
+        }
+
+        .section1 .centralize{
+            gap: 0px;
+        }
+
+        .centralize{
+            margin: auto;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            gap: 45px;
+        }
+
+        .centralize img.um{
+            width: 180px;
+            height: 180px;
+            border-radius: 50%;
+            border: 3px solid #FF914D;
+        }
+
+        .section2{
+            display: flex;
+            height: 100vh;
+            background-color: rgb(221, 221, 221);
+        }
+
+        .section2 table{
+            width: 100%;
+            height: 100%;
+            align-items: center;
+        }
+
+        .imagemProjeto{
+            width: 15vw;
+            height: 15vh;
+            padding-left: 215px;
+        }
+
+        .section3{
+            display: flex;
+            height: 100vh;
+            background-color: white;
+        }
+
+        .section3 .imagemProjeto{
+            padding-left: 0px;
+        }
+
+        .section4{
+            display: flex;
+            height: 100vh;
+            background-color: rgb(221, 221, 221);
+        }
+
+        footer{
+            background-color: white;
+            padding: 30px;
+            color: #FF914D;
+        }
+
+        .botao{
+            background-color: #FF914D;
+            color: white;
+            padding: 15px 25px;
+            border: none;
+            border-radius: 20px;
+            font-size: 20px;
+            transition: .5s;
+            cursor: pointer;
+        }
+
+        .botao:hover{
+            background-color: #ff9f63;
+            color: black;
+        }
+
+        .section3 table{
+            width: 100%;
+            height: 100%;
+            align-items: center;
+        }
+
+        .section4 table{
+            width: 100%;
+            height: 100%;
+            align-items: center;
+        }
+
+        #topMenu div{
+            display: flex;
+        }
+
+        .section1 h1{
+            font-size: 60px;
+        }
+
+        .section2 img{
+            width: 400px;
+            height: 220px;
+        }
+
+        .section3 img{
+            width: 400px;
+            height: 210px;
+        }
+
+        .section4 img{
+            width: 400px;
+            height: 210px;
+        }
+
+        @media screen and (max-width: 440px) {
+
+            body{
+                overflow-x: hidden;
+            }
+
+            #topMenu{
+                flex-direction: column;
+            }
+
+            #topMenu img{
+                margin-left: 145px;
+            }
+
+            .section1 h1{
+                font-size: 50px;
+            }
+
+            tr{
+                display: flex;
+                flex-direction: column;
+            }
+
+            .section2 img{
+            width: 300px;
+            height: 160px;
+            }
+
+            .section2 tr{
+                margin-left: -120px;
+            }
+
+            .section2 tr img{
+                margin-left: -50px;
+            }
+
+            .section3 img{
+            width: 300px;
+            height: 160px;
+            }
+
+            .section3 tr{
+                margin-left: -70px;
+            }
+
+            .section3 tr img{
+                margin-left: 110px;
+            }
+
+            .section4 img{
+            width: 300px;
+            height: 160px;
+            }
+
+            .section4 tr{
+                margin-left: -120px;
+            }
+
+            .section4 tr img{
+                margin-left: -50px;
+            }
+
+            .centralize tr{
+                margin-top: 230px;
+            }
+
+        }
+
+        @media screen and (max-width: 424px) {
+
+            body{
+                overflow-x: hidden;
+            }
+
+            #topMenu{
+                flex-direction: column;
+            }
+
+            #topMenu img{
+                margin-left: 145px;
+            }
+
+            .section1 h1{
+                font-size: 50px;
+            }
+
+            tr{
+                display: flex;
+                flex-direction: column;
+            }
+
+            .section2 img{
+            width: 300px;
+            height: 160px;
+            }
+
+            .section2 tr{
+                margin-left: -120px;
+            }
+
+            .section2 tr img{
+                margin-left: -50px;
+            }
+
+            .section3 img{
+            width: 300px;
+            height: 160px;
+            }
+
+            .section3 tr{
+                margin-left: -70px;
+            }
+
+            .section3 tr img{
+                margin-left: 110px;
+            }
+
+            .section4 img{
+            width: 300px;
+            height: 160px;
+            }
+
+            .section4 tr{
+                margin-left: -120px;
+            }
+
+            .section4 tr img{
+                margin-left: -50px;
+            }
+
+            .centralize tr{
+                margin-top: 230px;
+            }
+
+        }
+
+        @media screen and (max-width: 424px) {
+
+            body{
+                overflow-x: hidden;
+            }
+
+            #topMenu{
+                flex-direction: column;
+            }
+
+            #topMenu img{
+                margin-left: 145px;
+            }
+
+            .section1 h1{
+                font-size: 50px;
+            }
+
+            tr{
+                display: flex;
+                flex-direction: column;
+            }
+
+            .section2 img{
+            width: 300px;
+            height: 160px;
+            }
+
+            .section2 tr{
+                margin-left: -120px;
+            }
+
+            .section2 tr img{
+                margin-left: -50px;
+            }
+
+            .section3 img{
+            width: 300px;
+            height: 160px;
+            }
+
+            .section3 tr{
+                margin-left: -70px;
+            }
+
+            .section3 tr img{
+                margin-left: 110px;
+            }
+
+            .section4 img{
+            width: 300px;
+            height: 160px;
+            }
+
+            .section4 tr{
+                margin-left: -120px;
+            }
+
+            .section4 tr img{
+                margin-left: -50px;
+            }
+
+            .centralize tr{
+                margin-top: 230px;
+            }
+
+        }
+
+        @media screen and (max-width: 400px) {
+
+            body{
+                overflow-x: hidden;
+            }
+
+            #topMenu{
+                flex-direction: column;
+            }
+
+            #topMenu img{
+                margin-left: 120px;
+            }
+
+            .section1 h1{
+                font-size: 50px;
+            }
+
+            tr{
+                display: flex;
+                flex-direction: column;
+            }
+
+            .section2 img{
+            width: 300px;
+            height: 160px;
+            }
+
+            .section2 tr{
+                margin-left: -120px;
+            }
+
+            .section2 tr img{
+                margin-left: -50px;
+            }
+
+            .section3 img{
+            width: 300px;
+            height: 160px;
+            }
+
+            .section3 tr{
+                margin-left: -70px;
+            }
+
+            .section3 tr img{
+                margin-left: 110px;
+            }
+
+            .section4 img{
+            width: 300px;
+            height: 160px;
+            }
+
+            .section4 tr{
+                margin-left: -120px;
+            }
+
+            .section4 tr img{
+                margin-left: -50px;
+            }
+
+            .centralize tr{
+                margin-top: 230px;
+            }
+
+        }
+
+        @media screen and (max-width: 385px) {
+
+            body{
+                overflow-x: hidden;
+            }
+            
+            #topMenu{
+                flex-direction: column;
+            }
+
+            #topMenu img{
+                margin-left: 115px;
+            }
+
+            .section1 h1{
+                font-size: 50px;
+            }
+
+            tr{
+                display: flex;
+                flex-direction: column;
+            }
+
+            .section2 img{
+            width: 300px;
+            height: 160px;
+            }
+
+            .section2 tr{
+                margin-left: -120px;
+            }
+
+            .section2 tr img{
+                margin-left: -50px;
+            }
+
+            .section3 img{
+            width: 300px;
+            height: 160px;
+            }
+
+            .section3 tr{
+                margin-left: -70px;
+            }
+
+            .section3 tr img{
+                margin-left: 110px;
+            }
+
+            .section4 img{
+            width: 300px;
+            height: 160px;
+            }
+
+            .section4 tr{
+                margin-left: -120px;
+            }
+
+            .section4 tr img{
+                margin-left: -50px;
+            }
+
+            .centralize tr{
+                margin-top: 130px;
+            }
+
+        }
+
+    </style>
+
+    <body>
+
+        <nav>
+
+            <ul id="topMenu">
+
+                <li><a href="home.html"><img src="./2c873f44-81a6-4d9a-a5e8-b6023f97c818.jpg" alt="Logo Dev. Leonardo" style="width: 45px; height: 45px; border-radius: 50%; position: absolute; margin-top: -13px;"></a></li>
+
+                <div>
+                    
+                    <li><a href="home.html">Home</a></li>
+
+                    <li><a href="#projetos">Projetos</a></li>
+
+                    <li><a href="contato.html">Contato</a></li>
+
+                </div>
+
+            </ul>
+
+        </nav>
+
+        <div class="section1">
+
+            <div class="centralize">
+
+                <h1 style="color: #FF914D; font-family: 'Times New Roman', Times, serif; cursor: pointer;">Dev. Leonardo</h1>
+
+                <a href="#projetos"><button class="botao">Meus Projetos</button></a>
+
+            </div>
+
+        </div>
+
+        <div id="projetos" class="section2 centralize">
+
+            <table>
+
+                <tr>
+
+                    <td style="width: 40%;">
+                        
+                        <img src="./Captura de tela 2024-04-26 214242.png" alt="Primeiro projeto" class="imagemProjeto">
+                    
+                    </td>
+
+                    <td style="width: 60%; text-align: left; padding-left: 155px;">
+
+                        <h2>Relógio Digital</h2><hr>
+
+                        <p>Esse site é um relógio on-line. <br> O horário se adapta de acordo com o horário do seu dispositivo.</p>
+
+                        <div>
+
+                            <h3>Tecnologias ultilizadas:</h3>
+
+                            <ul style="color: #FF914D;">
+
+                                <li>HTML</li>
+
+                                <li>CSS</li>
+
+                                <li>JavaScript</li>
+
+                            </ul>
+
+                        </div>
+
+                    </td>
+
+                </tr>
+
+            </table>
+
+        </div>
+
+        <div id="projetos" class="section3 centralize">
+
+            <table>
+
+                <tr>
+
+                    <td style="width: 60%; text-align: left; padding-left: 105px;">
+
+                        <h2>Site do Google Glass</h2><hr>
+
+                        <p>Esse site foi feito seguindo o curso de HTML5 do professor Gustavo Guanabara. <br> O site foi muito complexo, chegando a mais de 1100 linhas de código.</p>
+
+                        <div>
+
+                            <h3>Tecnologias ultilizadas:</h3>
+
+                            <ul style="color: #FF914D;">
+
+                                <li>HTML</li>
+
+                                <li>CSS</li>
+
+                                <li>JavaScript</li>
+
+                            </ul>
+
+                        </div>
+
+                    </td>
+
+                    <td style="width: 40%;">
+                        
+                        <img src="./Captura de tela 2024-04-26 232644.png" alt="Primeiro projeto" class="imagemProjeto">
+                    
+                    </td>
+
+                </tr>
+
+            </table>
+
+        </div>
+
+        <div id="projetos" class="section4 centralize">
+
+            <table>
+
+                <tr>
+
+                    <td style="width: 40%;">
+                        
+                        <img src="./Captura de tela 2024-04-27 181031.png" alt="Primeiro projeto" class="imagemProjeto">
+                    
+                    </td>
+
+                    <td style="width: 60%; text-align: left; padding-left: 155px;">
+
+                        <h2>Meu antigo portfólio</h2><hr>
+
+                        <p>Esse site foi feito seguindo o curso de HTML5, CSS3 e JavaScript na prático, da Udemy.</p>
+
+                        <div>
+
+                            <h3>Tecnologias ultilizadas:</h3>
+
+                            <ul style="color: #FF914D;">
+
+                                <li>HTML</li>
+
+                                <li>CSS</li>
+
+                            </ul>
+
+                        </div>
+
+                    </td>
+
+                </tr>
+
+            </table>
+
+        </div>
+
+        <footer>
+
+            <h5 class="centralize">@Criado por @devleonardo.ofc</h5>
+
+        </footer>
+        
+    </body>
+
+</html>
